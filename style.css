@@ -1,0 +1,123 @@
+body {
+    background-color: #313131;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(dum-kit.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.keys-volume {
+    display: flex;
+    max-width: 900px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.keys {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: auto;
+    min-width: 300px;
+}
+
+.key {
+    width: 60px;
+    height: 60px;
+    padding: 8px;
+    min-width: 60px;
+    border: 2px solid #0c0c0c;
+    border-radius: 6px;
+    margin: 4px 8px 4px 8px;
+    color: #fff;
+    
+    background-color: #0c0c0cd7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    transition: all 0.07s;
+
+    kbd {
+        font-weight: bold;
+        font-size: 30px;
+        font-family: 'Franklin Gothic Medium';
+    }
+
+    span {
+        color: #ffe44e;
+        font-family: Helvetica, sans-serif;
+        letter-spacing: 1px;
+        font-size: 10px;
+        margin-top: 2px
+    }
+
+}
+
+.playing {
+    transform: scale(1.1);
+    border-color: #ffc600;
+    box-shadow: 0 0 10px #ffc600;
+}
+
+.volume-control {
+    height: 20px;
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    background-color: #0c0c0cd7;
+    border-radius: 6px;
+    border: 2px solid #0c0c0c; 
+
+    svg {
+        width: 20px;
+        height: 20px;
+        margin: 0px 6px 0px 0px;
+        fill: #fff;
+        filter: drop-shadow(0 0 1px #eeeeee);
+    }
+
+    input {
+        width: 190px;
+        height: 6px;
+        cursor: pointer;
+        background: linear-gradient(to right, #0c0c0c, #0c0c0c);
+        border: none;
+        border-radius: 6px;
+        outline: none;
+        -webkit-appearance: none;
+    }
+
+    input::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #ffc600;
+        cursor: pointer;
+        box-shadow: 0 0 8px #ffc600;
+    }
+
+    input::-moz-range-thumb {
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        background-color: #ffc600;
+        cursor: pointer;
+        border: none;
+        box-shadow: 0 0 8px #ffc600;
+    }
+
+
+
+}
+
